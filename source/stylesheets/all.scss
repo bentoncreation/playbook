@@ -1,0 +1,76 @@
+@import "bourbon";
+@import "base/base";
+
+html {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  height: 100%;
+}
+
+div.container {
+  /*@include outer-container;*/
+  margin: 0;
+  height: 100%;
+  max-width: 1200px;
+
+  aside {
+    /*@include span-columns(3);*/
+    height: 100%;
+    position: fixed;
+    width: 250px;
+    overflow: auto;
+    background-color: $dark-purple;
+
+    h2 {
+      color: #fff;
+      font-family: $heading-font-family;
+      font-size: $base-font-size * 0.875;
+      font-weight: 500;
+      text-transform: uppercase;
+      border-bottom: 0;
+    }
+
+    nav {
+      color: #fff;
+      padding: 0 30px 0 30px;
+      margin: 60px 0;
+    }
+
+    ul li {
+      padding-bottom: $small-spacing;
+      font-size: $base-font-size;
+      font-weight: 500;
+
+      a {
+        color: #fff;
+        border-bottom: 0;
+      }
+
+      ul li {
+        padding-bottom: 0;
+        font-family: $heading-font-family;
+        font-size: $base-font-size * 0.875;
+        font-weight: 400;
+
+        a {
+          color: $light-purple;
+        }
+      }
+    }
+  }
+
+  article {
+    height: 100%;
+    padding-top: 60px;
+    margin: 0 30px 0 400px;
+
+    img.logo {
+      float: left;
+      margin-left: -131px;
+      margin-top: -10px;
+    }
+  }
+}
