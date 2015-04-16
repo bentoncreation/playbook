@@ -5,3 +5,5 @@ gem "middleman-livereload", "~> 3.1.0"
 
 gem "bitters"
 gem "neat"
+
+gem "nokogiri"

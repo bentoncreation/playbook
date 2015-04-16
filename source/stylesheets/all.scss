@@ -72,5 +72,23 @@ div.container {
       margin-left: -131px;
       margin-top: -10px;
     }
+
+    ol {
+      li {
+        counter-increment: step-counter;
+        margin-bottom: $small-spacing;
+        position: relative;
+
+        &::before {
+          content: counter(step-counter);
+          color: $light-purple;
+          width: $small-spacing;
+          height: $small-spacing;
+          left: -1.5em;
+          top: 0;
+          position: absolute;
+        }
+      }
+    }
   }
 }
