@@ -12,6 +12,23 @@
   border-radius: 50%;
 }
 
+.notice {
+  margin: 30px 0;
+  border: 3px solid $faint-purple;
+
+  .header {
+    font-weight: bold;
+    padding: 4px 8px;
+    background-color: $faint-purple;
+    color: #fff;
+  }
+
+  p {
+    margin: 8px;
+    color: $medium-gray;
+  }
+}
+
 
 // main
 
